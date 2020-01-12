@@ -13,7 +13,7 @@
     
     
     
-    <title>Adobe Creative Cloud（正在装修中...） | Brywmzl</title>
+    <title>Adobe Creative Cloud（正在装修中...） | Brywmzl | When all else is lost the future still remains~</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
@@ -137,7 +137,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -188,11 +188,14 @@
 
 
             
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-			
-			<p>Adobe Direct Download Links!（Adobe 每年的更新都可以累死人！所以今年不急慢慢来，不只是 Adobe，还有其他秋季发布的软件）</p>
+            <p>Adobe Direct Download Links!（Adobe 每年的更新都可以累死人！所以今年不急慢慢来，不只是 Adobe，还有其他秋季发布的软件）</p>
 <a id="more"></a>
 <p><strong><font face="微软雅黑" size="4" color="212121">注意事项</font></strong></p>
 <table><tr><td bgcolor="f5f5f5"><font face="微软雅黑" size="2" color="5f6368"><br>你需要拥有一个<a href="https://account.adobe.com/" target="_blank" rel="noopener">Adobe账户</a>来登录，才可以使用以下链接，因为Adobe在浏览器中设置了一个会话Cookie，这个Cookie允许你访问以下链接。不然，你会出现“访问被拒绝”或“没有权限”的消息，阻止链接。所以，请仔细按照以下说明进行操作，否则链接将不起作用！<br><br>1. Adobe 建议暂时关闭你可能正在运行的任何上网限制，例如网站或Cookie阻止，过滤，防火墙软件<br>2. <a href="">点击此处，访问此页面</a> 首先，点击任意在表格下面的链接<br>3. 如果出现提示，请使用你的Adobe账户登录或花个一两分钟时间创建一个<br>4. 好了，现在，你已经设置了试用版cookie，然后登录了Adobe，因此你可以随便下载任何一个软件，只要你有足够的磁盘空间<br><br></font></td></tr></table>
@@ -1161,7 +1164,7 @@
 </nav>
 
 
-	
+
     
 
 
@@ -1177,21 +1180,30 @@
 
 
 
-	
 </article>
 
 <div id="reward" class="page-modal reward-lay">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <h3 class="reward-title">
         <i class="icon icon-quote-left"></i>
-        支付宝红包
+        谢谢大爷~
         <i class="icon icon-quote-right"></i>
     </h3>
     <div class="reward-content">
         
         <div class="reward-code">
-            <img id="rewardCode" src="/img/alipay.png" alt="打赏二维码">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
         </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
         
     </div>
 </div>
@@ -1201,8 +1213,29 @@
 </div>
 
         <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
     <div class="bottom">
         <p><span>Brywmzl &copy; 2015 - 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
         </p>
     </div>
 </footer>
@@ -1246,7 +1279,26 @@ var BLOG = { ROOT: '/', SHARE: false, REWARD: true };
 
 
 
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
 
 
 
