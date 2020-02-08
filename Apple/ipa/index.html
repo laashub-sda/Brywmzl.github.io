@@ -36,7 +36,7 @@
 <meta property="og:image" content="https://brywmzl.github.io/img/Apple/old/image9.png">
 <meta property="og:image" content="https://brywmzl.github.io/img/Apple/old/image11.png">
 <meta property="og:image" content="https://brywmzl.github.io/img/Apple/old/image12.png">
-<meta property="og:updated_time" content="2020-02-08T12:03:06.140Z">
+<meta property="og:updated_time" content="2020-02-08T12:31:35.066Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="下载旧版app">
 <meta name="twitter:description" content="下载旧版app">
@@ -217,8 +217,9 @@
 <p><div align="center"><div class="img-lightbox"><div class="overlay"></div><img src="/img/Apple/old/image5.png" width="auto" height="auto"></div><br>它是通过代理拦截请求，来实现Rewrite URL，所以事先要关闭其他的代理，以免发生冲突。（修复没网=关闭代理）</div></p>
 <p><div align="center"><div class="img-lightbox"><div class="overlay"></div><img src="/img/Apple/old/image9.png" width="auto" height="auto"></div><br>应用成功后，来到iTunes中搜索和下载这个app</div></p>
 <p><div align="center"><div class="img-lightbox"><div class="overlay"></div><img src="/img/Apple/old/image11.png" width="auto" height="auto"></div><br>这样可以找到文件</div></p>
-<p><div align="center"><div class="img-lightbox"><div class="overlay"></div><img src="/img/Apple/old/image12.png" width="auto" height="auto"></div><br>我这里用7z打开，听说删除这个文件就不会提醒更新了~</div></p>
-<p>如果遇到 不能读取文件“itunes.library.itl”因为它是由更高级别的itunes所创建的<br>%username%\Music\iTunes\Previous iTunes Librarie<br>下删除</p>
+<p><div align="center"><div class="img-lightbox"><div class="overlay"></div><img src="/img/Apple/old/image12.png" width="auto" height="auto"></div><br>听说删除这个文件就不会提醒更新了~</div></p>
+<p>如果遇到 不能读取文件 <code>itunes.library.itl</code> 因为它是由更高级别的 itunes 所创建的<br><code>%username%\Music\iTunes\Previous iTunes Librarie</code> 下删除</p>
+<p><a href="https://www.maxlicheng.com/github/605.html" target="_blank" rel="noopener">参考</a></p>
 <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="制作xml"><a href="#制作xml" class="headerlink" title="制作xml"></a>制作xml</h2><table>
 <thead>
 <tr>
@@ -250,7 +251,7 @@
 </tr>
 </tbody>
 </table>
-<p><a href="https://github.com/Brywmzl/ipa" target="_blank" rel="noopener">项目地址</a><br><a href="https://www.icloud.com/shortcuts/cf4df6440fe846eb80da7b5b1c752895" target="_blank" rel="noopener">Install ipa</a><br><a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Brywmzl/ipa/master/xml/nicegram.xml" target="_blank" rel="noopener">Nicegram 5.10.ipa</a></p>
+<p><a href="https://github.com/Brywmzl/ipa" target="_blank" rel="noopener">项目地址</a>（Github）<br><a href="https://www.icloud.com/shortcuts/cf4df6440fe846eb80da7b5b1c752895" target="_blank" rel="noopener">Get “Install ipa”</a>（Shortcuts）<br><a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Brywmzl/ipa/master/xml/nicegram.xml" target="_blank" rel="noopener">Nicegram 5.10.ipa</a>（也可以做成直接下载链接）</p>
 <p><code>itms-services://?action=download-manifest&amp;url=</code> + <code>xml 文件地址</code><br><code>http://localhost/download?path=/app.ipa</code>（Shu）<br><code>http://localhost:8000/app.ipa</code>（nPlayer、FileMaster）<br><code>http://localhost:8080/app.ipa</code>（FileHub、Documents、文件全能王）</p>
 <p>无非就是 url 的端口不同</p>
 <h2 id="局域网安装（Shu）"><a href="#局域网安装（Shu）" class="headerlink" title="局域网安装（Shu）"></a>局域网安装（Shu）</h2><p><strong>通过局域网传输 ipa 文件到 Shu</strong></p>
